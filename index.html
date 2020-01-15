@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <form id="book-form">
+            <div>
+                <label for="title-box">Title</label>
+                <input class="u-full-width" type="text" id="title-box">
+            </div>
+            <div>
+                <label for="author-box">Author</label>
+                <input class="u-full-width" type="text" id="author-box">
+            </div>
+            <div>
+                <label for="isbn-box">ISBN#</label>
+                <input class="u-full-width" type="text" id="isbn-box">
+            </div>
+            <div>
+                <input class="u-full-width button-primary" type="submit" value="Submit">
+            </div>    
+        </form>
+        <table class="u-full-width">    
+            <thead>    
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"> </tbody>
+        </table>
+    </div>
+
+    <script src="appES6.js"></script>
+</body>
+</html>
